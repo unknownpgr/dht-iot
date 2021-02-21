@@ -8,7 +8,7 @@ Python script can be executed via ssh.
 
 Also, HOST in python script for PC should be changed to proper IP address.
 
-## Steps to Execute
+## Steps
 
 1. Connect Arduino Yun and PC to same WiFi network. It is recommneded to use PC as hotspot AP and connect Arduino to that.
 1. Update required files on Arduino Yun. Sketch file can be uploaded via Sketch IDE and Python script can be uploaded via SCP.
