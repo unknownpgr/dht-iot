@@ -17,7 +17,16 @@ Also, HOST in python script for PC should be changed to proper IP address.
 
 Then it will automatically connect to Arduino and get humidity, temperature, traffic data from Arduino and Open API, and generate CSV file containing them with timestamp.
 
+## Challenges
+
+- It is impossible to connect to Arduino Yun with VS Code remote explorer because of the lack of storage space.
+  - So file on Arduino Yun only can be edited via vim.
+- Installing python3 is also impossible because of same reason.
+  - Therefore, only python2 (which is installed by default) can be used.
+- Is seems like that Arduino Yun is not connected to WIFI if the given WIFI does not exist when it is booted.
+  - Therefore, the WIFI should be prepared before Arduino Yun is booted.
+
 ## Notice
 
-- 노드 링크에 `표준링크`와 `서울특별시 서비스링크`  두 가지가 있다. 이 프로그램에서는 `서울특별시 서비스링크`를 입력해야만 한다.
-- `docs/references`에 변환할 수 있는 엑셀 표가 있다.
+- There are two types of link id, `표준링크(Standard link)` and `서울특별시 서비스링크(Service link)`. API used in the PC script  uses the service link.
+- There are an mapping table (`.xls` file) in `docs/references`. If you only know the standard link, you should convert it to service link with this table.
