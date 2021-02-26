@@ -49,8 +49,8 @@ with open('output.csv', 'w', newline='') as f:
         # Get response code
         code = root[1][0].text
 
+        # If response contains errors, print it and retry.
         if code != 'INFO-000':
-            # If response contains errors, print it and retry.
             print(f'Could not get data with OpenAPI. :', root[1][1].text)
             print("Try again after 2 seconds.")
             time.sleep(2)
