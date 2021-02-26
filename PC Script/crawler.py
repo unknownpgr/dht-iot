@@ -14,6 +14,8 @@ LINK_ID = '1220003800'
 # OpenAPI url for traffic data
 url = f"http://openapi.seoul.go.kr:8088/{API_KEY}/xml/TrafficInfo/1/5/{LINK_ID}"
 
+print('URL :', url)
+
 with open('output.csv', 'w', newline='') as f:
     # CSV file for data logging
     csv_writer = csv.writer(f)
