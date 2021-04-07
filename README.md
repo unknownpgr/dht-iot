@@ -22,13 +22,12 @@ This loop runs on the ATmega32U4 once every two seconds. In this loop, ATmega co
 
 ### Main Loop
 
-This loop runs on Laptop and also runs once every two seconds. This  loop does the following steps.
+This loop runs on laptop and also runs once every two seconds. This  loop does the following steps.
 
-1. Request humidity, temperature data from AR9331 on Arduino Yun via local WIFI connection.
-2. If required data was received, request traffic data from Seoul public data API server via internet.
-3. If both data was received, concatenate the two data with timestamp and append it to CSV file.
-
-
+1. The laptop requests humidity, temperature data from AR9331 on Arduino Yun via local WIFI connection.
+2. Then, AR9331 reads required data from hardware bridge and response to laptop.
+3. If required data was received, laptop request traffic data from the Seoul public data API server via internet.
+4. If both data was received, concatenate the two data with timestamp and append it to CSV file.
 
 ## How to Use
 
