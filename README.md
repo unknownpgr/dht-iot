@@ -12,7 +12,7 @@ Refer to the [schematic file](./docs/Schematic_DHT-Arduino_2021-04-07.pdf) for h
 
 ## Project Structure
 
-![Project Structure](docs/imgs/Project Structure.png)
+![Project Structure](./docs/imgs/Project Structure.png)
 
 There are two independent loop.
 
