@@ -8,6 +8,8 @@ Python script can be executed via SSH.
 
 Also, HOST in python script for PC should be changed to proper IP address.
 
+Refer to the [schematic file](https://github.com/unknownpgr/dht-iot/blob/master/docs/Schematic_DHT-Arduino_2021-04-07.pdf) for hardware configuration.
+
 ## Steps
 
 1. Connect Arduino Yun and PC to same WIFI network. It is recommended to use PC as hotspot AP and connect Arduino to that.
